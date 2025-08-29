@@ -1,1 +1,1 @@
-# Exámen Diagnóstico / ING.SOFT 💻​
+# Exámen Diagnóstico / Ingeniería de Software 💻​

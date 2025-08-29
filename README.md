@@ -1,1 +1,1 @@
-# Exámen Diagnóstico
+# Exámen Diagnóstico / ING.SOFT 💻​

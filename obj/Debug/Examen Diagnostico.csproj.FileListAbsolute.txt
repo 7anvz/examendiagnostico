@@ -1,0 +1,8 @@
+C:\Users\ACER\Downloads\Proyecto\Examen Diagnostico\bin\Debug\Examen Diagnostico.exe.config
+C:\Users\ACER\Downloads\Proyecto\Examen Diagnostico\bin\Debug\Examen Diagnostico.exe
+C:\Users\ACER\Downloads\Proyecto\Examen Diagnostico\bin\Debug\Examen Diagnostico.pdb
+C:\Users\ACER\Downloads\Proyecto\Examen Diagnostico\obj\Debug\Examen Diagnostico.csproj.AssemblyReference.cache
+C:\Users\ACER\Downloads\Proyecto\Examen Diagnostico\obj\Debug\Examen Diagnostico.csproj.CoreCompileInputs.cache
+C:\Users\ACER\Downloads\Proyecto\Examen Diagnostico\obj\Debug\Examen Diagnostico.exe
+C:\Users\ACER\Downloads\Proyecto\Examen Diagnostico\obj\Debug\Examen Diagnostico.pdb
+C:\Users\ACER\Downloads\Proyecto\Examen Diagnostico\obj\Debug\Examen Diagnostico.exe.config

@@ -10,12 +10,12 @@ namespace Examen_Diagnostico
     {
         static void Main(string[] args)
         {
-
             double precio = 0.00;
             double totalpago = 0.00;
+            double diferencia = 0.00;
 
             Console.WriteLine("TIPOS DE JUGOS: ");
-            Console.WriteLine("⋯ ⋯ ⋯ ⋯ ⋯ ⋯ ⋯ ⋯");
+            Console.WriteLine("- - - - - - - - -");
             Console.WriteLine("[1] Jugo de Naranja");
             Console.WriteLine("[2] Jugo de Fresas");
             Console.WriteLine("[3] Jugo de Lúcuma");
@@ -28,7 +28,7 @@ namespace Examen_Diagnostico
 
             Console.WriteLine("  ");
             Console.WriteLine("TAMAÑOS DEL JUGO: ");
-            Console.WriteLine("⋯ ⋯ ⋯ ⋯ ⋯ ⋯ ⋯ ⋯");
+            Console.WriteLine("- - - - - - - - -");
             Console.WriteLine("[1] Large");
             Console.WriteLine("[2] Medium");
             Console.WriteLine("[3] Small");
@@ -38,9 +38,9 @@ namespace Examen_Diagnostico
 
             Console.WriteLine("  ");
             Console.WriteLine("TIPO DE PAGO: ");
-            Console.WriteLine("⋯ ⋯ ⋯ ⋯ ⋯ ⋯ ⋯ ⋯");
+            Console.WriteLine("- - - - - - - - -");
             Console.WriteLine("[1] Efectivo");
-            Console.WriteLine("[2] Tarjeta");
+            Console.WriteLine("[2] Tarjeta / Medio electrónico");
             Console.WriteLine("  ");
             Console.Write("Escribe el número de la forma de pago >>> ");
             int tipopago = int.Parse(Console.ReadLine());
@@ -84,15 +84,23 @@ namespace Examen_Diagnostico
                     break;
             }
 
-            if (tipopago == 1) { totalpago = precio * 0.92; }
-            else if (tipopago == 2) { totalpago = precio * 1.07; }
+            if (tipopago == 1)
+            {
+                diferencia = precio * 0.08;       
+                totalpago = precio - diferencia;
+            }
+            else if (tipopago == 2)
+            {
+                diferencia = precio * 0.07;      
+                totalpago = precio + diferencia;
+            }
 
             Console.WriteLine("  ");
             Console.WriteLine("↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓");
-            Console.WriteLine($"PRECIO INICIAL: {precio} SOLES");
-            Console.WriteLine($"PRECIO FINAL: {totalpago} SOLES");
-
-
+            Console.WriteLine($"PRECIO INICIAL: S/{precio}");
+            if (tipopago == 1) Console.WriteLine($"DESCUENTO (8%): - S/{diferencia:F2}");
+            else Console.WriteLine($"RECARGO (7%): + S/{diferencia:F2}");
+            Console.WriteLine($"PRECIO FINAL: S/{totalpago:F2}");
         }
     }
 }
